@@ -3,8 +3,7 @@
     x:Class="CustomControls.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Shell.NavBarIsVisible="False">
-
+    Shell.NavBarIsVisible="True">
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
             <Label
@@ -12,8 +11,9 @@
                 Margin="10,10"
                 FontAttributes="Bold"
                 FontSize="35"
-                Text="Login"
-                TextColor="{DynamicResource PrimaryDark}" />
+                Text="Login Pig"
+                TextColor="{DynamicResource PrimaryDark}"
+                ToolTipProperties.Text="Text To Log In" />
             <Entry x:Name="Username" />
             <Entry x:Name="Password" IsPassword="True" />
             <Picker x:Name="picker" Title="Select a monkey">
@@ -29,12 +29,21 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
+            <Switch OnColor="Blue" />
+            <CheckBox />
+            <Editor />
+            <Slider />
+            <Stepper />
+            <DatePicker />
+            <TimePicker />
             <Button
                 x:Name="CounterBtn"
                 Clicked="OnCounterClicked"
+                FontAttributes="Bold"
                 HorizontalOptions="Fill"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Text="Click me" />
+                Text="Click me"
+                ToolTipProperties.Text="Click To Login" />
         </VerticalStackLayout>
     </ScrollView>
 
