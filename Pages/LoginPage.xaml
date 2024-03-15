@@ -3,6 +3,7 @@
     x:Class="CustomControls.Pages.LoginPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
     Title="LoginPage"
     Shell.FlyoutBehavior="Disabled">
     <VerticalStackLayout>
@@ -11,5 +12,6 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" />
         <Button Clicked="Button_Clicked" Text="Navigate" />
+        <maps:Map x:Name="myMap" />
     </VerticalStackLayout>
 </ContentPage>
